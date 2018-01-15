@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Creation flight</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/bootstrap-material-datetimepicker.css" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body background="images/MainImage.png" >
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3">
+			<!-- <img alt="image background" src="https://a0.muscache.com/ic/discover/180?interpolation=lanczos-none&amp;output-format=jpg&amp;output-quality=70&amp;v=33b4f2&amp;downsize=655px:326px" /> -->
+		</div>
+		<div class="col-md-12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					 
+						<a class="navbar-brand" href="../FlightList/flightList.html">Flight List</a>
+					
+						<a class="navbar-brand" href="../CreateFlight/createFlight.html">Flight Creation</a>
+					
+						<a class="navbar-brand" href="../leaflet/create_leaflet/index.html">Commercial Leaflet</a>
+						
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="navbar-brand" type="button" id="goToConnexion" href="../../index.html">Logout</a>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6">
+					
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<section>
+				<header>
+				  <h1>CREATION FLIGHT</h1>
+				</header>
+		    <div class="arrow-up"></div>
+				<form id="contact" class="form-horizontal" role="form" style="opacity:0.9">
+					<div class="form-group">
+						<div class="col-sm-12">
+
+							<input type="text" class="form-control" id="num" placeholder="COMMERCIAL NUMBER" maxlength="7">
+							
+						</div>
+					</div>
+					<div class="form-group">	
+						<div class="col-sm-12">
+							<!-- <div class="form-row">
+							<input type="text" class="form-control form-textbox" id="atc" required>
+							<label for="atc" class="col-sm- control-label form-label">
+								ATC
+							</label>
+							</div> -->
+
+							<input type="text" class="form-control" id="atc" placeholder="ATC" maxlength="5">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="text" class="form-control" id="dep_aprt_code" placeholder="DEPARTURE AIRPORT CODE"maxlength="4">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="text" class="form-control" id="arr_arpt_code" placeholder="ARRIVAL AIRPORT CODE"maxlength="4">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="text" class="form-control timepicker" id="dep_time" placeholder="DEPARTURE TIME">
+						</div>
+					</div>					
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="text" class="form-control timepicker" id="arr_time" placeholder="ARRIVAL TIME">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="text" class="form-control" id="dep_date" placeholder="DEPARTURE DATE">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-12">
+							<input type="text" class="form-control datepicker" id="arr_date" placeholder="ARRIVAL DATE">
+						</div>
+					</div>
+					<button class="btn btn-block" type="button" id="buttonAddFlight">Add Flight</button>
+				</form> 
+		</div>
+	</section>
+		<div class="col-md-2">
+		</div>
+
+		<!-- <div class="col-sm-offset-5 col-sm-10">		 
+		<button type="submit" class="btn btn-primary" id="buttonAddFlight">
+			Add flight
+		</button>
+		</div> -->
+
+
+
+		<!-- 
+		<div class="col-sm-offset-2 col-sm-10">		 
+		<button type="submit" class="btn btn-primary" id="buttonGetFlight">
+			GetFlight
+		</button></div>
+		-->
+
+
+		
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3">
+					 
+				
+				</div>
+				
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/FezVrasta/bootstrap-material-design/master/dist/js/material.min.js"></script>
+	<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-material-datetimepicker.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/autosize.js/1.18.17/jquery.autosize.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script type="javascript" src="js/wickedpicker.js"></script>
+	<script src="js/index.js"></script>
+
+  </body>
+</html>
